@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2023 Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="#" class="image avatar"><img src="images/overhead_view.png" alt="" /></a>
+                    <h1><strong>ENPH 353<br/>Machine-Learning Robot Simulation</strong></h1>
+                </div>
+            </header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<ul class="actions">
+							<li><a href="index.html" class="button">Back to home page</a></li>
+						</ul>
+                        <header class="major">
+							<h2></h2>
+						</header>
+						<p>In this 2-person project, I implemented an autonomous agent to navigate a simulated world and detect and read 
+                            licence plates off of parked cars. The simulated world was created in a Linux-based environment, using Gazebo 
+                            and ROS. The code for this project was written in Python: navigation and plate detection utilised OpenCV to 
+                            process frames from the simulated camera feed, using techniques such as binary masking, contouring, and perspective 
+                            transformation; and reading the captured licence plates was achieved by training the CNN via Tensorflow/keras. 
+                            Our initial plate detection strategy used the SIFT algorithm, which relies on a reference image in order to find 
+                            matches in features between the reference image and the test image. In the context of this project, this was unideal 
+                            since the licence plates were all different - there weren’t enough similarities between any two plates, and setting 
+                            the threshold too low resulted in more inaccuracies.
+                        </p>
+                        <figure>
+                            <img src="images/overhead_view.png" class="image" title="Title here" style="width:40%"/>
+                            <img src="images/street_view.png" class="image" title="Title here" style="width:50%"/>
+                            <figcaption><p><i>Left: Bird's-eye-view of simulated world; Right: Example camera feed from robot.</i></p></figcaption>
+                        </figure>
+                        <p>The challenge of this course was in providing enough quantity and variation of the sample images to train the CNN. 
+                            Certain letters and numbers had very close likeness, such as “5” and “S”, which made it more difficult for our CNN to 
+                            consistently guess the correct characters.
+                        </p>
+                        <figure>
+                            <img src="images/license_plate.png" class="image" style="width:30%"/>
+                            <img src="images/plate_characters.png" class="image" style="width:60%"/>
+                            <figcaption><p><i>Left: Captured licence plate; Right: Individual characters captured from the licence plate, to feed to CNN to identify the character</i></p></figcaption>
+                        </figure>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

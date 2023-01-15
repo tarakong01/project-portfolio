@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2023 Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="#" class="image avatar"><img src="images/twist_bend_board.jpg" alt="" /></a>
+                    <h1><strong>Kardium<br/>Production Jig PCB & Firmware Redesign</strong></h1>
+                </div>
+            </header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<ul class="actions">
+							<li><a href="index.html" class="button">Back to home page</a></li>
+						</ul>
+                        <header class="major">
+							<h2></h2>
+						</header>
+						<p>During my term at Kardium, I worked on the PCB of a production jig that applied pressure to bend certain parts of the device. The role 
+                            of the PCB and firmware was to initiate, monitor, and shut off the pressure output at a given threshold. 
+                            To reduce time spent manufacturing and maintaining the jig, I was tasked with removing the pressure sensing logic originally performed 
+                            in the hardware and converting it into firmware, and updating the schematic and PCB accordingly.<br/><br/>
+                            To update the firmware, I wrote C to program an Arduino MKR Wifi 1010. I utilized timers and interrupts and the onboard analog comparator and 
+                            ADC to read and compare analog values from the pressure sensors. On the electrical side, I updated the existing schematic and PCB by removing unneeded components, replacing obsolete parts with newly sourced 
+                            components, and resizing components as needed to reflect any other changes made.<br/><br/>
+                            My main takeaway from this project was learning to pick up from someone else's work and quickly familiarize myself with all the existing functions 
+                            and design choices. This was especially important to ensure that any new components or functionality that I added were compatible with the existing features and matched the component specifications. 
+                            </p>
+                        <figure>
+                            <img src="images/twist_bend_board.jpg" class="image" style="width:70%"/>
+                            <figcaption><p><i>Final assembled PCB</i></p></figcaption>
+                        </figure>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

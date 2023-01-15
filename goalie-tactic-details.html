@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2023 Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="#" class="image avatar"><img src="images/robot.png" alt="" /></a>
+                    <h1><strong>UBC Thunderbots<br/>Goalie Tactic State-Machine</strong></h1>
+                </div>
+            </header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<ul class="actions">
+							<li><a href="index.html" class="button">Back to home page</a></li>
+						</ul>
+                        <header class="major">
+							<h2></h2>
+						</header>
+						<p>As a software member of Thunderbots,  UBC’s autonomous robot soccer design team, a major project I took on 
+                            was implementing a portion of the gameplay logic, the goalie tactic, as a state-machine. In C++, I developed 
+                            the states, events, and transitions of the state-machine, which defined behaviour for blocking and intercepting, 
+                            clearing, and tracking the ball. Furthermore, I designed simulated integration tests that ran the software 
+                            through a sequence of events, using validation functions to verify that the robot performed the correct state 
+                            transition and associated actions. The purpose of implementing gameplay as a state-machine was to make our code 
+                            more modular, templatized, and scalable, which allowed for quicker debugging and accommodated further development 
+                            in the future by other team members.
+                        </p>
+                        <figure>
+                            <img src="images/goalie_tactic.png" class="image fit" style="width:70%"/>
+                            <figcaption><p><i>State transition diagram.</i></p></figcaption>
+                        </figure>
+                        <p>States:<br/>
+                            <b><i>Find best position</i></b>: the goalie positions itself between the ball and the goal<br/>
+                            <b><i>Block ball</i></b>: the goalie moves to intercept, and automatically clears the ball on interception<br/>
+                            <b><i>Clear ball</i></b>: the goalie intercepts the ball, then dribbles to an appropriate location to clear it<br/>
+                            <br/>
+                            Events:<br/>
+                            <i><b>panic</b></i>: ball is moving faster than the panic speed threshold, and toward the goal<br/>
+                            <i><b>safe</b></i>: ball is outside of the friendly defence area, and not moving above the panic threshold<br/>
+                            <i><b>caution</b></i>: ball is inside the friendly defence area but not moving above the panic threshold<br/></p>
+                            <figure>
+                                <img src="images/tbots_simulation.png" class="image fit" style="width:60%"/>
+                                <figcaption><p><i>View of simulated test GUI.</i></p></figcaption>
+                            </figure>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

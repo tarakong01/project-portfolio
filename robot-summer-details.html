@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>2023 Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <a href="#" class="image avatar"><img src="images/robot_summer_square.jpg" alt="" /></a>
+                    <h1><strong>ENPH 253<br/>Autonomous "Mars Rover" Robot</strong></h1>
+                </div>
+            </header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<ul class="actions">
+							<li><a href="index.html" class="button">Back to home page</a></li>
+						</ul>
+                        <header class="major">
+							<h2></h2>
+						</header>
+						<p>The goal of this 3-person project was to design, prototype, and implement a fully autonomous robot that 
+                            could traverse an 8 square-foot section of floor, detect and collect empty pop cans lying around, and 
+                            deposit them vertically in a designated dropoff box. I largely contribute to the software and mechanical 
+                            design.<br/><br/>
+                            The software was implemented on an STM32 BluePill microcontroller, in the form of a state-machine 
+                            in C++ to account for the various different behaviours: driving, picking up and storing a can, and depositing 
+                            cans at the dropoff box. Furthermore, line-following driving was implemented with reflectance sensors located 
+                            on the underside of the robot, paired with PID control.</br><br/>
+                            The mechanical design went through several iterations - the main factor behind our final design was having an 
+                            intermediate storage system that could store multiple cans vertically, in such a way as to make the final dropoff as simple as possible.<br/><br/>
+                            I also contributed to the electrical system by hand-soldering and debugging various circuits, including an H-bridge motor driver.
+                        </p>
+                        <figure>
+                            <img src="images/cardboard.png" class="image" style="width:40%"/>
+                            <img src="images/cad.png" class="image" style="width:50%"/>
+                            <figcaption><p><i>Left: Cardboard prototype of final robot design; Right: CAD model of final robot design.</i></p></figcaption>
+                        </figure>
+                        <p>The biggest challenge of this project was the integration of the sub-systems.
+                        For example, integrating the software into the mechanical system introduced issues regarding inertia and imbalance that 
+                        our software didn't account for before - as a result, we spent a lot of time tuning our software to compensate for these disturbances. 
+                        Another challenge we faced was that this project occurred during the COVID lockdown. Being remote, we didn’t have access to the machine shop 
+                        or hands-on assistance from our instructors. To overcome these obstacles, we underwent lots of prototyping and built our robots using hand tools and corrugated plastic, 
+                        and communicated regularly and effectively to meet tight deadlines. In the final course competition, our robots placed 3rd out of 16 teams.</p>
+                        <figure>
+                            <img src="images/robot_summer_square.jpg" class="image" style="width: 45%"/>
+                            <img src="images/h-bridge.jpg" class="image" style="width: 40%;"/>
+                            <figcaption><p><i>Left: Assembled robot on tape path; Right: H-bridge circuit close-up.</i></p></figcaption>
+                        </figure>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
